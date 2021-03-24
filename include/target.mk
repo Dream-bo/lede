@@ -62,7 +62,7 @@ endif
 DEFAULT_PACKAGES += $(DEFAULT_PACKAGES.$(DEVICE_TYPE))
 
 filter_packages = $(filter-out -% $(patsubst -%,%,$(filter -%,$(1))),$(1))
-extra_packages = $(if $(filter wpad wpad-% nas,$(1)),iwinfo)
+extra_packages = $(if $(filter wpad-mini wpad-basic wpad-basic-wolfssl wpad nas,$(1)),iwinfo)
 
 define ProfileDefault
   NAME:=
@@ -229,9 +229,7 @@ ifeq ($(DUMP),1)
     .PRECIOUS: $(TMP_CONFIG)
 
     ifdef KERNEL_TESTING_PATCHVER
-      ifneq ($(KERNEL_TESTING_PATCHVER),$(KERNEL_PATCHVER))
-        FEATURES += testing-kernel
-      endif
+      FEATURES += testing-kernel
     endif
     ifneq ($(CONFIG_OF),)
       FEATURES += dt

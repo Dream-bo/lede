@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Copyright © 2019 Alexey Loukianov <lx2@lexa2.ru>
 # Copyright © 2020 David Woodhouse <dwmw2@infradead.org>

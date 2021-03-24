@@ -242,7 +242,7 @@
 				read-only;
 			};
 			partition@a0000 {
-				label = "u-boot-env";
+				label = "uboot-env";
 				reg = <0xa0000 0x20000>;
 				read-only;
 			};

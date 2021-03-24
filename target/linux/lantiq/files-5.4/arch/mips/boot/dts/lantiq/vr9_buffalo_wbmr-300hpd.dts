@@ -281,7 +281,7 @@
 
 			partition@ff0000 {
 				reg = <0xff0000 0x2000>;
-				label = "u-boot-env";
+				label = "ubootconfig";
 			};
 
 			partition@ff3000 {

@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
+/dts-v1/;
 
 #include "qca9563_tplink_tl-wpa8630p-v2.dtsi"
 
@@ -8,8 +9,8 @@
 };
 
 &partitions {
-	info: partition@630000 {
-		label = "info";
+	mac: partition@630000 {
+		label = "mac";
 		reg = <0x630000 0x010000>;
 		read-only;
 	};

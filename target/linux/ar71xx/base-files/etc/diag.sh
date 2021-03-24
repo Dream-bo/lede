@@ -211,7 +211,6 @@ get_status_led() {
 		status_led="$board:red:system"
 		;;
 	dw33d|\
-	sbr-ac1750|\
 	r36a)
 		status_led="$board:blue:status"
 		;;

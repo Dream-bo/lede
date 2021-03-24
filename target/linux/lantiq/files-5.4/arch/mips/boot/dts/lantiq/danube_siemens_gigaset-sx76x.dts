@@ -77,7 +77,7 @@
 			};
 
 			partition@10000 {
-				label = "u-boot-env";
+				label = "uboot_env";
 				reg = <0x30000 0x10000>;
 			};
 

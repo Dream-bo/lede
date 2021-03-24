@@ -12,6 +12,8 @@ move_config() {
 			[ -f "/boot/$BACKUP_FILE" ] && mv -f "/boot/$BACKUP_FILE" /
 		fi
 		;;
+	*)
+		;;
 	esac
 }
 

@@ -35,7 +35,7 @@
 				read-only;
 			};
 			partition@50000 {
-				label = "u-boot-env";
+				label = "uboot-env";
 				reg = <0x50000 0x10000>;
 			};
 			partition@60000 {

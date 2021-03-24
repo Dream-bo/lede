@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later OR MIT
-
-#include "ar9344.dtsi"
+/dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
 #include <dt-bindings/input/input.h>
+
+#include "ar9344.dtsi"
 
 / {
 	model = "PowerCloud Systems CAP324";
@@ -58,12 +59,12 @@
 		};
 
 		lan_amber {
-			label = "pcs:amber:lan";
+			label = "pcs:lan:amber";
 			gpios = <&gpio 15 GPIO_ACTIVE_LOW>;
 		};
 
 		lan_green {
-			label = "pcs:green:lan";
+			label = "pcs:lan:green";
 			gpios = <&gpio 14 GPIO_ACTIVE_LOW>;
 		};
 	};
